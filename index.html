@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="name">Aryan</div>
+
+      <!-- Hamburger Menu -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-ul">
+        <li>Home</li>
+        <li><a href="#abtme">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div class="me">
+    <h1 class="me-txt" id="abtme">About Me</h1>
+  </div>
+
+  <div class="about">
+    <div class="right">
+      <h1>My self Aryan</h1>
+      <h2>I am <span id="typewriter"></span></h2>
+      <p class="intro-text">
+        I love building web experiences, editing digital content, and
+        constantly learning new skills. Passionate about clean design,
+        efficient code, and telling stories through technology.
+      </p>
+      <ul class="about-list">
+        <li>💻 Front-End Web Development</li>
+        <li>✂️ Video & Photo Editing</li>
+        <li>📚 Tech Enthusiast & Fast Learner</li>
+        <li>🎯 Focused on Growth & Impact</li>
+      </ul>
+    </div>
+    <div class="left">
+      <img src="dev69.webp" alt="dev img" />
+    </div>
+  </div>
+
+  <div class="hr"></div>
+
+  <div class="text">
+    <h1 class="skill-text">My Skills</h1>
+  </div>
+
+  <div class="my-skills" id="skills">
+    <div class="skill-card html-card">
+      <img src="html.png" alt="HTML Logo" />
+      <h3>HTML5</h3>
+      <ul>
+        <li>Semantic Structure</li>
+        <li>Forms</li>
+        <li>Accessibility</li>
+      </ul>
+    </div>
+
+    <div class="skill-card css-card">
+      <img src="css.png" alt="CSS Logo" />
+      <h3>CSS</h3>
+      <ul>
+        <li>Flexbox</li>
+        <li>Grid</li>
+        <li>Animations</li>
+        <li>Responsive</li>
+      </ul>
+    </div>
+
+    <div class="skill-card js-card">
+      <img src="js2.png" alt="JavaScript Logo" />
+      <h3>JavaScript</h3>
+      <ul>
+        <li>Basics</li>
+        <li>Loops</li>
+        <li>Dev Tools</li>
+      </ul>
+    </div>
+
+    <div class="skill-card github-card">
+      <img src="icn.svg" alt="GitHub Icon" />
+      <h3>GitHub</h3>
+      <ul>
+        <li>Push</li>
+        <li>Fork</li>
+        <li>Collaborate</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Typewriter Effect -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    const typewriter = new Typewriter(document.getElementById("typewriter"), {
+      strings: ["a Student", "a Developer", "an Editor"],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
